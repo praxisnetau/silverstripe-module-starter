@@ -332,7 +332,7 @@ class Setup
             
             // Write File Contents:
             
-            file_put_contents($file, $contents);
+            file_put_contents($path, $contents);
             
         }
     }
