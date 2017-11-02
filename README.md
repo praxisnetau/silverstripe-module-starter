@@ -235,4 +235,4 @@ Please see [contributing](CONTRIBUTING.md) for more information.
 
 [silverstripe]: https://github.com/silverstripe/silverstripe-framework
 [webpack]: https://webpack.js.org
-[issues]: https://github.com/praxisnetau/silverstripe-starter-module/issues
+[issues]: https://github.com/praxisnetau/silverstripe-module-starter/issues
