@@ -1,0 +1,36 @@
+{
+  "name": "{repo-name}",
+  "type": "silverstripe-vendormodule",
+  "description": "{description}",
+  "homepage": "{repo-url}",
+  "keywords": {keywords-json},
+  "license": "BSD-3-Clause",
+  "authors": [
+    {
+      "name": "{author}",
+      "role": "Developer",
+      "email": "{email}",
+      "homepage": "{homepage}"
+    }
+  ],
+  "require": {
+    "php": ">=5.6.0",
+    "silverstripe/framework": "^4@dev"
+  },
+  "autoload": {
+    "psr-4": {
+      "{namespace-psr4}": "src/"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0.x-dev"
+    },
+    "expose": [
+      "admin/client/dist",
+      "client/dist"
+    ]
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}

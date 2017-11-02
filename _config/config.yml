@@ -1,0 +1,11 @@
+---
+Name: {module}
+---
+
+# Configure Admin Extensions:
+
+SilverStripe\Admin\LeftAndMain:
+  extra_requirements_css:
+    - "{repo-name}: admin/client/dist/styles/bundle.css"
+  extra_requirements_javascript:
+    - "{repo-name}: admin/client/dist/js/bundle.js"
