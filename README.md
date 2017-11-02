@@ -106,7 +106,7 @@ The module comes pre-configured with everything you need to get underway. Fronte
 are processed and bundled using [webpack][webpack], and the included config is ready to create bundles for
 both the website and the CMS. Your admin bundles will be included in the CMS automatically
 (see [config.yml](_config/config.yml)), however you will need to handle loading the website bundles yourself,
-e.g. using `Requirements` or the like.
+e.g. by using `Requirements` in your controller.
 
 A `yarn.lock` file is included with the repo. To install build dependencies, run:
 
@@ -114,7 +114,7 @@ A `yarn.lock` file is included with the repo. To install build dependencies, run
 $ yarn install
 ```
 
-This will download all of the build dependencies into the `node_modules` folder. Two modes are pre-configured
+This will download all of the build dependencies into the `node_modules` folder. Two scripts are pre-configured
 for Yarn, `watch` for development, and `build` for production:
 
 ```bash
@@ -141,7 +141,7 @@ These folders are exposed by default within the `composer.json` file, so that wh
 a SilverStripe v4 app, these folders are automatically exposed in the `resources/` folder.
 
 To include your module bundles for the website, you'll need to load your `dist/` bundles, for example
-by using the SilverStripe `Requirements` class (where `vendor/module` is your repository name):
+by using the SilverStripe `Requirements` class in your controller (where `vendor/module` is your repository name):
 
 ```php
 use SilverStripe\View\Requirements;
