@@ -1,4 +1,4 @@
-# SilverStripe Starter Module
+# SilverStripe Module Starter
 
 A starter kit that has everything you need to get underway with a new module for [SilverStripe v4][silverstripe].
 
