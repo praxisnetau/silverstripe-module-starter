@@ -25,7 +25,7 @@ A starter kit that has everything you need to get underway with a new module for
 Using `git`, clone the repo to a location of your choice:
 
 ```bash
-$ git clone https://github.com/praxisnetau/silverstripe-starter-module ./my-repo-name
+$ git clone https://github.com/praxisnetau/silverstripe-module-starter ./my-repo-name
 ```
 
 After the repo has cloned, you will need to run the `setup.php` script:
