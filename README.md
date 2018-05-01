@@ -237,6 +237,14 @@ Scrutinizer is a third party service that staticaly analyzes your code looking f
 and complex code (i.e. code smells).  A sample configuration file is provided.  You will need to set up an account and
 add your module at https://scrutinizer-ci.com/
 
+### Badges
+A simple Ruby script to add badges to your README file is available at https://github.com/gordonbanderson/Badger - simply
+`cd /path/to/your/repo && /path/to/badger/bin/badger`.  After the first line starting with a #, the badges for the current
+repository and branch will be added. 
+
+### Baseline CI Example
+The following is a valid SilverStripe repository with a single test added - https://github.com/gordonbanderson/travistestmodule
+
 ## Issues
 
 Please use the [GitHub issue tracker][issues] for bug reports and feature requests.
