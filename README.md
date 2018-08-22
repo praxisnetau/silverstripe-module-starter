@@ -214,6 +214,37 @@ class MyPage extends Page
 }
 ```
 
+## Continuous Integration
+The following services are free for open source repositories.  Note that both Scrutinizer and CodeCov show your source
+code, as such if you are writing closed source code you will need to either pay for these services or remove them from
+the continuous integration files.  Both CodeCov and Scrutinizer can be integrated with GitHub.
+
+### Unit Testing
+This repository provides configuration for 2 external continous testing services, Travis and Circle CI.  Circle CI is
+around 3 times faster, but lacks out of the box ability to test with different versions of PHP, database, etc.  If you
+use third party software, e.g. sphinx, then then `.travis.yml` and `circleci\config.yml` will need edited.
+
+You will need to add accounts and then add your module at the following URLs:
+* Travis: https://travis-ci.org/
+* CircleCI: https://circleci.com/
+
+### Code Coverage
+The CI files upload code coverage to a third party service called CodeCov.  To see your test coverage, open an account
+at https://codecov.io and add your module there.
+
+### Code Quality
+Scrutinizer is a third party service that staticaly analyzes your code looking for likes of PSR violations, formatting,
+and complex code (i.e. code smells).  A sample configuration file is provided.  You will need to set up an account and
+add your module at https://scrutinizer-ci.com/
+
+### Badges
+A simple Ruby script to add badges to your README file is available at https://github.com/gordonbanderson/Badger - simply
+`cd /path/to/your/repo && /path/to/badger/bin/badger`.  After the first line starting with a #, the badges for the current
+repository and branch will be added. 
+
+### Baseline CI Example
+The following is a valid SilverStripe repository with a single test added - https://github.com/gordonbanderson/travistestmodule
+
 ## Issues
 
 Please use the [GitHub issue tracker][issues] for bug reports and feature requests.
