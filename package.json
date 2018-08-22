@@ -21,7 +21,7 @@
     "url": "{repo-url}/issues"
   },
   "engines": {
-    "node": "^4.2.0"
+    "node": ">= 6.x"
   },
   "scripts": {
     "watch": "webpack --env.development --colors --watch",
